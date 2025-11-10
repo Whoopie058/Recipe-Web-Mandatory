@@ -597,6 +597,137 @@ p {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Detail Recipe Site */
+
+.DetailHero {
+    min-height: 386px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display:flex;
+    justify-content: center;
+    width: var(--width-full);
+    height: auto;
+    margin: 0;
+}
+
+.hero-text-recipe-list p {
+    color:var(--primary-color);
+}
+
+.hero-text-recipe-list {
+    grid-column: 1 / span 3;
+    grid-row:2;
+}
+
+.hero-text-recipe-list h1 {
+    font-size: 37px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.hero-text-recipe-list h1 span {
+    font-size: 37px;
+    font-weight: 900;
+}
+
+
+.RecipeStats {
+    grid-column: 1 / span 6;
+    grid-row: 3;
+    color: var(--background-color-light);
+    display:flex;    
+    justify-content: space-between;
+}
+
+.IconPlace {
+    display:flex;
+    margin: 67px 0 0 0;
+    align-items:center;
+    gap:10px;
+}
+
+.IconPlace svg {
+    color:var(--primary-color);
+}
+
+.IngredientHeadline {
+    height: 60px;
+    color: var(--background-color-light);
+    border-bottom: 1px solid var(--background-color-light);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 70px 0 0 0;
+    font-size: 37px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Search Page Stuff*/
 .hero-searchpage {
     background: var(--background-color-dark);
@@ -699,3 +830,8 @@ p {
 .serp-result-item h2 {
     margin: 20px;
 }
+
+
+
+
+
