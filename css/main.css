@@ -776,7 +776,24 @@ p {
 
 
 /* Instructions */
-kk
+.InstructionHeadline {
+    height: 60px;
+    color: var(--background-color-light);
+    border-bottom: 1px solid var(--background-color-light);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 70px 0 0 0;
+    font-size: 37px;
+}
+
+.InstructionArea {
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 200px auto auto;
+    gap: var(--grid-gap);
+    width:var(--width-12col);
+    height: 100%;
+}
 
 
 
