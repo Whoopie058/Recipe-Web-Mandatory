@@ -776,6 +776,16 @@ p {
 
 
 /* Instructions */
+
+.InstructionArea {
+/*     display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 200px auto auto;
+    gap: var(--grid-gap);
+    width:var(--width-12col);
+    height: 100%; */
+}
+
 .InstructionHeadline {
     height: 60px;
     color: var(--background-color-light);
@@ -784,15 +794,28 @@ p {
     font-weight: 700;
     margin: 70px 0 0 0;
     font-size: 37px;
+    display: grid;
+    width: var(--width-12col);
+    margin: 0 auto;
+}
+
+.InstructionList {
+    font-size: 14px;
+    width: 70%;
+    display: flex;
+    color: var(--color_light);
 }
 
 .InstructionArea {
-    display:grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 200px auto auto;
-    gap: var(--grid-gap);
-    width:var(--width-12col);
-    height: 100%;
+    display: grid;
+    width: var(--width-12col);
+    margin: 0 auto;
+}
+
+.InstructionList ul li {
+/*     width: 90%; */
+    grid-column: 1 / span 8;
+    margin: 40px 0 40px 20px;
 }
 
 
