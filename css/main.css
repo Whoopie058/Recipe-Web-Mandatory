@@ -725,6 +725,7 @@ p {
 .IngredientListButtons {
     display:flex;
     column-gap: 10px;
+    margin: 0 0 66px 0;
 }
 
 .ing-btn-print {
@@ -777,15 +778,6 @@ p {
 
 /* Instructions */
 
-.InstructionArea {
-/*     display:grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 200px auto auto;
-    gap: var(--grid-gap);
-    width:var(--width-12col);
-    height: 100%; */
-}
-
 .InstructionHeadline {
     height: 60px;
     color: var(--background-color-light);
@@ -801,7 +793,7 @@ p {
 
 .InstructionList {
     font-size: 14px;
-    width: 70%;
+    width: 55%;
     display: flex;
     color: var(--color_light);
 }
@@ -812,10 +804,8 @@ p {
     margin: 0 auto;
 }
 
-.InstructionList ul li {
-/*     width: 90%; */
-    grid-column: 1 / span 8;
-    margin: 40px 0 40px 20px;
+.InstructionList ol li {
+    padding: 20px 0 10px 5px;
 }
 
 
