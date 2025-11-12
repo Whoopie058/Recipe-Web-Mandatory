@@ -808,6 +808,11 @@ p {
     padding: 20px 0 10px 5px;
 }
 
+.IngredientAreaImage {
+    display:flex;
+/*     justify-content:end; */
+}
+
 
 
 
