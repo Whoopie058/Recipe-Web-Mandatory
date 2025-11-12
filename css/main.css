@@ -704,7 +704,7 @@ p {
 
 .IngredientList {
     font-size: 12px;
-    width: 50%;
+    width: 70%;
     display: flex;
     color: var(--color_light);
 }
@@ -798,10 +798,15 @@ p {
     color: var(--color_light);
 }
 
+.IngredientArea {
+    display: flex;
+}
+
 .InstructionArea {
     display: grid;
     width: var(--width-12col);
     margin: 0 auto;
+    
 }
 
 .InstructionList ol li {
@@ -945,3 +950,30 @@ p {
 
 
 
+
+
+
+
+
+
+
+
+
+
+/* Mobil css */
+
+    @media (width < 600px) {
+
+    :root {
+         --width-12col: 100%;
+    }
+
+    .todays_recipes_content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    body {
+        background-color: rgb(125, 74, 74);
+    }
+
+}
