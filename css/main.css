@@ -666,11 +666,10 @@ p {
 
 
 .RecipeStats {
-    grid-column: 1 / span 6;
-    grid-row: 3;
     color: var(--background-color-light);
     display:flex;    
     justify-content: space-between;
+    padding: 0 200px 0 0;
 }
 
 .IconPlace {
@@ -774,6 +773,11 @@ p {
     padding: 0px;
 }
 
+.IngredientAreaImage {
+    display:flex;
+    padding: 0 0 100px 0;
+}
+
 
 
 /* Instructions */
@@ -798,6 +802,11 @@ p {
     color: var(--color_light);
 }
 
+.InstructionImg1 {
+    display:flex;
+    justify-content: end;
+}
+
 .IngredientArea {
     display: flex;
 }
@@ -813,10 +822,7 @@ p {
     padding: 20px 0 10px 5px;
 }
 
-.IngredientAreaImage {
-    display:flex;
-/*     justify-content:end; */
-}
+
 
 
 
