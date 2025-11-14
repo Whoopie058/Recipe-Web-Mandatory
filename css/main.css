@@ -719,6 +719,7 @@ p {
 }
 
 
+
 /* Buttons */
 
 .IngredientListButtons {
@@ -842,6 +843,8 @@ p {
     padding: 0 90px 0 0;
 }
 
+
+
 /* Cookbooks Blocks */
 
 .CookBookHeadline {
@@ -855,7 +858,71 @@ p {
     width: var(--width-12col);
 }
 
+.CookBook_block {
+    display: grid;
+    gap: var(--grid-gap);
+    width: var(--width-12col);
+    grid-template-columns: repeat(4, 1fr);
+    height: fit-content;
+}
 
+.todays_recipes_content_block {
+    background-color: var(--background-color-light);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.tCookBook_block_image img {
+    border-radius: 5px 5px 0 0;
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.todays_recipes_content_block_text {
+    padding:20px;
+    color:var(--background-color-dark);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.todays_recipes_content_block_text h5 {
+font-size: 20px;
+font-weight: 700;
+margin: 0 0 10px 0;
+text-transform: uppercase;
+}
+
+.todays_recipes_content_block_text p {
+    font-size: 16px;
+}
+
+.todays_recipes_content_bottom_area {
+    display:flex;
+    justify-content: space-between;
+    margin: 40px 0 0 0;
+}
+
+.todays_recipes_content_bottom_area_left {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0 0 10px;
+}
+
+.todays_recipes_content_bottom_area_left p {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.todays_recipes_content_bottom_area_left p:last-child {
+    font-weight: 600;
+}
 
 
 
