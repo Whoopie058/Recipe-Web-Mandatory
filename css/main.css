@@ -842,8 +842,18 @@ p {
     padding: 0 90px 0 0;
 }
 
+/* Cookbooks Blocks */
 
+.CookBookHeadline {
+    height: 28px;
+    color: var(--background-color-light);
+    border-bottom: 1px solid var(--background-color-light);
+    margin: 0 0 40px 0;
+}
 
+.CookBookBlocks {
+    width: var(--width-12col);
+}
 
 
 
