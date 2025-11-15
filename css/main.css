@@ -846,27 +846,29 @@ p {
 
 
 /* Cookbooks Blocks */
-
-.CookBookHeadline {
-    height: 28px;
-    color: var(--background-color-light);
-    border-bottom: 1px solid var(--background-color-light);
-    margin: 0 0 40px 0;
-}
-
-.CookBookBlocks {
+.CookBook {
     width: var(--width-12col);
+    display:grid;
+    height: fit-content;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px auto;
+    gap: var(--grid-gap);
+    margin: 0 auto;
 }
 
-.CookBook_block {
+.CookBook_headline {
+    border-bottom: 1px solid var(--background-color-light);
+}
+
+.CookBook_content {
     display: grid;
     gap: var(--grid-gap);
     width: var(--width-12col);
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     height: fit-content;
 }
 
-.todays_recipes_content_block {
+.CookBook_content_block {
     background-color: var(--background-color-light);
     border-radius: 5px;
     display: flex;
@@ -874,7 +876,7 @@ p {
     height: auto;
 }
 
-.tCookBook_block_image img {
+.CookBook_content_block_image img {
     border-radius: 5px 5px 0 0;
     height: 200px;
     width: 100%;
@@ -882,7 +884,7 @@ p {
     background-position: center;
 }
 
-.todays_recipes_content_block_text {
+.CookBook_content_block_text {
     padding:20px;
     color:var(--background-color-dark);
     display:flex;
@@ -891,38 +893,118 @@ p {
 }
 
 .todays_recipes_content_block_text h5 {
-font-size: 20px;
-font-weight: 700;
-margin: 0 0 10px 0;
-text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    color: var(--category-dessert);
 }
 
 .todays_recipes_content_block_text p {
     font-size: 16px;
+    color: var(--category-dessert);
 }
 
-.todays_recipes_content_bottom_area {
+.CookBook_content_bottom_area {
     display:flex;
     justify-content: space-between;
     margin: 40px 0 0 0;
 }
 
-.todays_recipes_content_bottom_area_left {
+.CookBook_content_bottom_area_left {
     display:flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 0 0 0 10px;
 }
 
-.todays_recipes_content_bottom_area_left p {
+.CookBook_content_bottom_area_left p {
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
 }
 
-.todays_recipes_content_bottom_area_left p:last-child {
+.CookBook_content_bottom_area_left p:last-child {
     font-weight: 600;
 }
+
+
+/* data-category colors start*/
+
+div[data-category="chicken"] {
+    border-left: 1px solid var(--category-chicken);
+}
+
+p[data-category="chicken"] {
+    color: var(--category-chicken);
+}
+
+div[data-category="dessert"] {
+    border-left: 1px solid var(--category-dessert);
+}
+
+p[data-category="dessert"] {
+    color: var(--category-dessert);
+}
+
+div[data-category="meats"] {
+    border-left: 1px solid var(--category-meats);
+}
+
+p[data-category="meats"] {
+    color: var(--category-meats);
+}
+
+/* data-category colors end*/
+
+
+.CookBook_content_bottom_area_left button {
+    background-color: var(--color-dark);
+    border: 1px solid var(--color-grey);
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 12px;
+    margin: 0;
+}
+
+.CookBook_content_bottom_area_left button a {
+    color:var(--color-white);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.CookBook_content_bottom_area_right svg {
+    border: 2px solid var(--color-dark);
+    border-radius: 5px;
+    background-color: #bcbcbc;
+}
+
+
+/* Favourite Recipes */
+
+.FavouriteRecipes {
+    width: var(--width-12col);
+    display:grid;
+    height: fit-content;
+    grid-template-columns: 1fr;
+    grid-template-rows: 130px auto;
+    gap: var(--grid-gap);
+    margin: 0 auto;
+}
+
+.FaveRecipes_Headline {
+    height: 60px;
+    color: var(--background-color-light);
+    border-bottom: 1px solid var(--background-color-light);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 70px 0 0 0;
+    font-size: 37px;
+}
+
+
+
+
 
 
 
