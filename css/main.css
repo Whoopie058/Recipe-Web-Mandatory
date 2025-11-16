@@ -1002,10 +1002,19 @@ p[data-category="meats"] {
     font-size: 37px;
 }
 
+.Fave_Recipe_bottom_area {
+    display:flex;
+    justify-content: end;
+    margin: 40px 0 0 0;
+}
 
-
-
-
+.Fave_Recipe_bottom_area_right svg {
+    display:flex;
+    justify-content:end;
+    border: 2px solid var(--color-dark);
+    border-radius: 5px;
+    background-color: #bcbcbc;
+}
 
 
 
