@@ -1016,9 +1016,19 @@ p[data-category="meats"] {
     background-color: #bcbcbc;
 }
 
+.CookBook_Plus_Sign {
+    background-color: var(--background-color-light);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 370px;
+}
 
-
-
+.CookBook_Plus_Sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -1131,7 +1141,10 @@ p[data-category="meats"] {
     margin: 20px;
 }
 
-
+.serp-result-item {
+    display: flex;
+    flex-direction:column;
+}
 
 
 
