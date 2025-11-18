@@ -593,42 +593,6 @@ p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Detail Recipe Site */
 
 /* Recipe Hero */
@@ -1034,10 +998,6 @@ p[data-category="meats"] {
 
 
 
-
-
-
-
 /*Search Page Stuff*/
 .hero-searchpage {
     background: var(--background-color-dark);
@@ -1166,13 +1126,9 @@ p[data-category="meats"] {
 
 
 
-
-
-
-
 /* Mobil css */
 
-    @media (width < 600px) {
+    @media (width < 400px) {
 
     :root {
          --width-12col: 100%;
@@ -1182,6 +1138,39 @@ p[data-category="meats"] {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .in_the_kitchen_content {
+        display: grid;
+        gap: var(--grid-gap);
+        width: var(--width-12col);
+        grid-template-columns: repeat(1, 1fr);
+        height: fit-content;
+    }
 
+    .content-area-kitchen {
+    width: var(--width-12col);
+    display: grid;
+    height: fit-content;
+    grid-template-columns: 1fr;
+    grid-template-rows: 130px auto;
+    gap: var(--grid-gap);
+    margin: 0 auto;
+    }
+
+    .in_the_kitchen_block {
+    height: fit-content;
+    width: 1200px;
+    background-color: var(--background-color-light);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-block {
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 90px auto auto;
+    gap: var(--grid-gap);
+    width:var(--width-12col);
+    height: 100%;
+    }
 
 }
