@@ -1142,6 +1142,11 @@ p[data-category="meats"] {
         height: fit-content;
     }
 
+    .kitchen_block_image img {
+        height: auto;
+        width: 100%;
+    }
+
     .content-area-kitchen {
     width: var(--width-12col);
     display: grid;
@@ -1154,10 +1159,23 @@ p[data-category="meats"] {
 
     .in_the_kitchen_block {
     height: fit-content;
-    width: 1200px;
+    width: var(--width-12col);
     background-color: var(--background-color-light);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    }
+
+    .category_selection_block {
+/* noget med flex wrap*/
+    }
+
+    .center-cat-icon {
+/* noget med width*/
+    }
+
+
+    .footer {
+        height: fit-content
     }
 
     .footer-block {
@@ -1167,6 +1185,14 @@ p[data-category="meats"] {
     gap: var(--grid-gap);
     width:var(--width-12col);
     height: 100%;
+    }
+
+    .footer-block {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer-text, .footer-text-two, .spotify-link {
+        grid-column: 1 / span 4;
     }
 
 }
