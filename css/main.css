@@ -424,7 +424,7 @@ p[data-category="meats"] {
 
 /*image section text*/
 
-p {
+p4 {
     display: flex;
     font-size: 16px;
     padding: 0 50px 0 0;
@@ -867,7 +867,12 @@ p {
 
 .todays_recipes_content_block_text p {
     font-size: 16px;
-    color: var(--category-dessert);
+    color: black;
+}
+
+.todays_recipes_content_block_text p3 {
+    font-size: 16px;
+    color: var(--category-seafood);
 }
 
 .CookBook_content_bottom_area {
@@ -1166,16 +1171,28 @@ p[data-category="meats"] {
     }
 
     .category_selection_block {
-/* noget med flex wrap*/
+    flex-direction:column;
+    height: auto;
+    gap:10px;
     }
 
     .center-cat-icon {
-/* noget med width*/
+    width: 50px;
+    }
+    .category_selection_block {
+        width:150px;
     }
 
+    .six_boxes_btn {
+        margin: 35px 0;
+    }
 
+    .h7 {
+        padding: 0px;
+    }
+    
     .footer {
-        height: fit-content
+    height: fit-content
     }
 
     .footer-block {
